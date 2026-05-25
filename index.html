@@ -3,6 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7SX1CKJ60K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-7SX1CKJ60K');
+</script>
 <title>Coder Courses — Fullstack Java + React</title>
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;700;900&family=Inter:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
 <style>
@@ -200,6 +208,18 @@ footer p{font-size:0.75rem;color:var(--gray);}
   .hstat{border-right:none;border-bottom:1px solid var(--border);}
   .faq-q{padding:1.3rem 1.2rem;}
   .faq-answer-inner{padding:0 1.2rem 1.3rem 1.2rem;}
+}
+@media(max-width:480px){
+  .promise,.program,.team,.companies-section,.jobs,.pricing,.career,.format,.faq-section{padding-top:4rem;padding-bottom:4rem;}
+  .cta-final{padding-top:6rem;padding-bottom:6rem;}
+  .p-card{padding:1.5rem;}
+  .p-price-num{font-size:2rem;}
+  .hstat{padding:1rem 1.5rem;}
+  .companies-grid{grid-template-columns:repeat(2,1fr);}
+  .hero-ctas{flex-direction:column;align-items:center;}
+  .hero-ctas .btn-main,.hero-ctas .btn-ghost{width:100%;text-align:center;}
+  .sec-title{font-size:1.7rem;}
+  .cta-final h2{font-size:2.2rem;}
 }
 </style>
 </head>
@@ -435,7 +455,7 @@ footer p{font-size:0.75rem;color:var(--gray);}
   <div class="label" data-i18n="fmt.label">Формат</div>
   <h2 class="sec-title" data-i18n="fmt.title">Как проходит обучение?</h2>
   <div class="format-grid">
-    <div class="fmt-card"><span class="fmt-icon">📅</span><div class="fmt-title" data-i18n="fmt1.title">Живые занятия</div><div class="fmt-desc" data-i18n="fmt1.desc">2–3 раза в неделю вечером онлайн. Можно совмещать с работой или учёбой.</div></div>
+    <div class="fmt-card"><span class="fmt-icon">📅</span><div class="fmt-title" data-i18n="fmt1.title">Живые занятия</div><div class="fmt-desc" data-i18n="fmt1.desc">5 раз в неделю онлайн. Каждый день новый урок.</div></div>
     <div class="fmt-card"><span class="fmt-icon">💻</span><div class="fmt-title" data-i18n="fmt2.title">Код-ревью</div><div class="fmt-desc" data-i18n="fmt2.desc">Каждое домашнее задание проверяется. Ментор объясняет ошибки лично.</div></div>
     <div class="fmt-card"><span class="fmt-icon">🤖</span><div class="fmt-title" data-i18n="fmt3.title">AI инструменты</div><div class="fmt-desc" data-i18n="fmt3.desc">С первого месяца учишься работать с AI — требование современного рынка.</div></div>
     <div class="fmt-card"><span class="fmt-icon">💬</span><div class="fmt-title" data-i18n="fmt4.title">Ежедневная поддержка</div><div class="fmt-desc" data-i18n="fmt4.desc">Ментор отвечает в чате каждый день. Ты не один.</div></div>
@@ -521,7 +541,7 @@ const translations = {
     'career.price':'Бесплатно','career.period':'для выпускников курса','career.btn':'НАПИСАТЬ В WHATSAPP →',
     'career.f1':'Составим резюме под вакансию','career.f2':'Mock-интервью с ментором','career.f3':'Разбор типичных вопросов','career.f4':'Обратная связь после интервью',
     'fmt.label':'Формат','fmt.title':'Как проходит обучение?',
-    'fmt1.title':'Живые занятия','fmt1.desc':'2–3 раза в неделю вечером онлайн. Можно совмещать с работой или учёбой.',
+    'fmt1.title':'Живые занятия','fmt1.desc':'5 раз в неделю онлайн. Каждый день новый урок.',
     'fmt2.title':'Код-ревью','fmt2.desc':'Каждое домашнее задание проверяется. Ментор объясняет ошибки лично.',
     'fmt3.title':'AI инструменты','fmt3.desc':'С первого месяца учишься работать с AI — требование современного рынка.',
     'fmt4.title':'Ежедневная поддержка','fmt4.desc':'Ментор отвечает в чате каждый день. Ты не один.',
@@ -588,7 +608,7 @@ const translations = {
     'career.price':'Бекер','career.period':'курстун бүтүрүүчүлөрү үчүн','career.btn':'ТОЛУГУРААК БИЛҮҮ →',
     'career.f1':'Вакансияга резюме түзүп беребиз','career.f2':'Ментор менен mock-интервью','career.f3':'Типтүү суроолорду талдоо','career.f4':'Интервьюдан кийин пикир',
     'fmt.label':'Формат','fmt.title':'Кантип өтөт?',
-    'fmt1.title':'Тирүү сабактар','fmt1.desc':'Жумасына 2–3 жолу кечинде онлайн. Иш же окуу менен айкалыштырса болот.',
+    'fmt1.title':'Тирүү сабактар','fmt1.desc':'Жумасына 5 жолу онлайн. Ар күнү жаңы сабак.',
     'fmt2.title':'Код-ревью','fmt2.desc':'Ар бир үй тапшырма текшерилет. Ментор катаңды жекече түшүндүрөт.',
     'fmt3.title':'AI инструменттер','fmt3.desc':'Биринчи айдан AI менен иштегенди үйрөнөсүң — азыркы рынок талабы.',
     'fmt4.title':'Күнүмдүк колдоо','fmt4.desc':'Чатта ментор ар күнү жооп берет. Жалгыз эмессиң.',
